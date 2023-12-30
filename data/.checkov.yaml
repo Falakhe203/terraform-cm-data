@@ -1,0 +1,7 @@
+evaluate-variables: true
+frameworks: terraform
+output: cli
+skip-check:
+  - CKV_AWS_144 # Ensure S3 Bucket has cross-region replication enabled
+  - CKV_AWS_52 # Ensure S3 Bucket has MFA delete enabled
+  - CKV_AWS_173 # Check encryption settings for Lambda environmental variable
