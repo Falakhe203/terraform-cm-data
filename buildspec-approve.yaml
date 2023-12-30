@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+    - pip install requests
+    - python request-approval.py
+  post_build:
+    commands:
+      - echo Approval requested on `date`
