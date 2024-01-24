@@ -19,7 +19,7 @@ module "s3-bucket-athena-results" {
 
     force_destroy = true
 
-    server_side_encryyption_configuration {
+    server_side_encryption_configuration {
         rule {
             apply_server_side_encryption_by_default = {
                 sse_algorithe = "aws:kms"
