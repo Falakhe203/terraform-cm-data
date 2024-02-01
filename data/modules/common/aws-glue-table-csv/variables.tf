@@ -50,7 +50,7 @@ variable "serialization_library" {
     default = "org.apache.hadoop.hive.serde2.OpenCSVSerde"
 }
 
-variable serialization_parameters {
+variable "serialization_parameters" {
     description = "Parameters for serialization library"
     type = map(string)
     default = {
