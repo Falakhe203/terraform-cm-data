@@ -9,7 +9,7 @@ resource "aws_glue_catalog_table" "table" {
     storage_descriptor {
       location = var.s3_storage_location
       input_format = "org.pache.hadoop.mapred.TextInputFormat"
-      output_format = "org.apach.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat"
+      output_format = "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat"
       parameters = var.table_parameters
 
     #   serialization with qoute support
