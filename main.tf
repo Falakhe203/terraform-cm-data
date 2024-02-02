@@ -117,7 +117,7 @@ module "order-state-source-layer" {
 
 # "Common state bucket for delta load"
 
-module "prepared-layyer-state-bucket" {
+module "prepared-layer-state-bucket" {
     source = "./data/prepared/_state_bucket"
 
     aws_account_id = var.aws_account_id
