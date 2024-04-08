@@ -1,5 +1,5 @@
 locals {
-    metrics_pattern = "[report_name=\"REPORT\", request_id_name=\"RequestId:\", request_id_value, duration_name=\"Duration:\", duration_va]ue]"
+    metrics_pattern = "[report_name=\"REPORT\", request_id_name=\"RequestId:\", request_id_value, duration_name=\"Duration:\", duration_value]"
     cloudwatch_log_group_name = "/aws/lambda/${var.lambda_function_name}"
     namespace = "BMW/Lambda"
 }
